@@ -15,7 +15,7 @@ As described in the Telegram Bot API, this is the manual procedure needed in ord
 
 - Open a new chat with your new Bot and post a message on the chat
 - Open a browser and invoke `https://api.telegram.org/bot<token>/getUpdates` (where `<token>` is the authentication token previously obtained)
-- Look at the JSON result and write down the value of `result[0].message.chat.id`. That is the chatId.
+- Look at the JSON result and write down the value of `result[0].message.chat.id`. That is the chatId. (Note that group chats Ids are prefixed with a "-" rg: -22334455. You need to include the "-" prefix in the chatId configuration file as below)
 
 ## Configuration
 
